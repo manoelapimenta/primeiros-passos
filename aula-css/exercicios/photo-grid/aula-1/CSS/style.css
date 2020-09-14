@@ -1,19 +1,16 @@
-.container {
-    background-color: #C7EFCF;
-}  
+body {
+    background: #C7EFCF;
+}
 /* HEADER*/
 .card-header {
     display: flex;
     background-color: #171123;
-    font-family: 'Merriweather', sans-serif;
-    color: antiquewhite;
-    font-size: 20px;
+    
     align-items: center;
     justify-content: center;
-    margin: 0px;
     height: 160px;
-    font-style: oblique
-   }
+    font-style: oblique;
+    }
 .card-header img {
     border-radius: 50%;
     max-width: 120px;
@@ -22,34 +19,55 @@
     height: auto;
     margin: 10px ;
    }
+.card-header h1 {
+    font-family: 'Merriweather', sans-serif;
+    color: antiquewhite;
+    font-size: 32px;
+}
 
   @media (min-width:768px) {
       h1 {
-          font-size: 32px;
+          font-size: 16px;
           color: whitesmoke;
-         
          }
-    }     
+    }   
+
       /*Card de Fotos*/
-
-.cards {
-    font-family: 'Merriweather', sans-serif;
-    color: midnightblue;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    display: inline-flex;
-  }
-
-.cards img {
-    max-width: 300px;
-    max-height: 300px;
-    margin-top: 50px;
-    padding: 30px;
-    
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    }
+        
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
 }
 
+.cards {
+    width: 300px;
+    padding: 10px;
+    background: papayawhip; 
+    margin: 10px;   
 
+}   
 
+.cards p {
+    font-family: 'Merriweather', sans-serif;
+    color: midnightblue;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+     
+}
+
+.cards :hover {
+    transform: scale(1.05);
+}
 
 
